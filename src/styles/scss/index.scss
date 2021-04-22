@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'colors';
+@import 'variables';
+@import 'hamburger';
+@import 'primereact';
+
+body {
+  background-color: $white;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}

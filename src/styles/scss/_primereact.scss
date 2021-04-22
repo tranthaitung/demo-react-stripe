@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'colors';
+
+.p-component {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.p-inputtext.p-invalid.p-component {
+  border-color: $error;
+}
+
+.p-password.p-invalid.p-component > .p-inputtext {
+  border-color: $error;
+}
+
+.p-inputtext:enabled:focus.p-invalid {
+  box-shadow: inset 0 0 0 1px $error, inset 0 0 0 1px $error, inset 0 0 0 1px $error,
+    inset 0 0 0 1px $error;
+}
+
+.p-password.p-invalid > .p-inputtext:enabled:focus {
+  box-shadow: inset 0 0 0 1px $error, inset 0 0 0 1px $error, inset 0 0 0 1px $error,
+    inset 0 0 0 1px $error;
+}
+
+.p-dropdown.p-invalid.p-component {
+  border-color: $error;
+}
+
+.p-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: $tableHeader;
+  border: none;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+// Menubar
+.p-menubar {
+  border-radius: 0;
+  border: none;
+  box-shadow: $boxShadow;
+}
